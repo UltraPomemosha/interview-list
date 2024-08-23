@@ -1,0 +1,37 @@
+.auth-form {
+  $gap: 10px;
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 650px;
+  width: 100%;
+  min-width: 280px;
+  
+  display: flex;
+  flex-flow: row wrap;
+  gap: $gap;
+
+  background-color: $transparent;
+
+  &__content {
+    flex: 0 0 100%;
+  }
+
+  &__input {
+    width: 100%;
+    margin-top: $gap;
+    font-size: 1.2rem;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__button {
+    flex: 0 1 calc(50% - $gap);
+  }
+
+  &__send-button {
+    flex: 0 1 calc(50% - $gap);
+    margin: 0 auto;
+  }
+}

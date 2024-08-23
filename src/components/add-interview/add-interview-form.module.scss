@@ -1,0 +1,43 @@
+.add-interview-form {
+  padding: 20px;
+  margin: 20px auto 0 auto;
+  max-width: 650px;
+  width: 100%;
+  min-width: 280px;
+
+  background-color: $transparent;
+  box-shadow: $shadow;
+
+  &__content {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+
+    @media screen and (width <= $breakpoint-610) {
+      gap: 5px;
+    }
+  }
+
+  &__title {
+    color: $title-color;
+    margin-bottom: 20px;
+
+    @media screen and (width <= $breakpoint-610) {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__button {
+    padding: 10px 20px;
+    margin-top: 20px;
+
+    @media screen and (width <= $breakpoint-920) {
+      padding: 5px;
+    }
+  }
+
+  @media screen and (width <= $breakpoint-610) {
+    margin: 0;
+    padding: 10px;
+  }
+}

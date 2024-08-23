@@ -1,0 +1,51 @@
+.app-header {
+  width: 100%;
+  height: max-content;
+  &__menu {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 20px;
+
+    &-item {
+      &:last-of-type {
+        margin-left: auto;
+      }
+    }
+
+    @media screen and (width <= $breakpoint-610) {
+      gap: 10px;
+    }
+  }
+
+  &__link {
+    padding: 10px 20px;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: $normal-gap;
+
+    @extend .app-button;
+
+    &_active {
+      background-color: $color-500;
+      color: $color-950;
+
+      &:hover {
+        background-color: $color-500;
+        color: $color-950;
+        cursor: default;
+      }
+    }
+
+    @media screen and (width <= $breakpoint-920) {
+      padding: 5px;
+    }
+  }
+}
+
+.link-title {
+  @media screen and (width <= $breakpoint-610) {
+    display: none;
+  }
+}

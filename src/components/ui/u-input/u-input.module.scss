@@ -1,0 +1,38 @@
+.u-input {
+  margin-top: 5px;
+  padding: 10px 10px;
+  display: block;
+  width: 100%;
+
+  border: 1px solid $color-700;
+  border-radius: 3px;
+  background-color: transparent;
+  color: $color-200;
+  box-shadow: 0 0 0 $color-800;
+  transition: all 0.3s linear;
+
+  &::placeholder {
+    color: rgba($color: $transparent, $alpha: 0.5);
+  }
+
+  &:hover {
+    border-color: $color-500;
+  }
+
+  &:focus {
+    box-shadow: $shadow;
+  }
+
+  @media screen and (width <= $breakpoint-610) {
+    padding: 5px;
+  }
+}
+
+.label {
+  display: block;
+}
+
+.title {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}

@@ -1,0 +1,57 @@
+.u-notification {
+  $icon-size: 24;
+  padding: $safe-padding;
+  max-width: 320px;  
+  width: 100%;
+  min-width: 280px;
+
+  color: $color-600;
+  border: 1px solid $color-600;
+  border-radius: 8px;
+  background-color: $color-1000;
+
+  animation: show 5s linear;
+
+  &__title-wrapper {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: $normal-gap;
+  }
+
+  &__title {
+    color: inherit;
+    text-transform: capitalize;
+  }
+
+  &__description {
+    margin-left: $icon-size + $normal-gap;
+    color: $color-400;
+    @extend .text-16;
+  }
+  
+  &._success {
+    color: $success-color;
+    border-color: $success-color;
+  }
+
+  &._error {
+    color: $error-color;
+    border-color: $error-color;
+  }
+}
+
+@keyframes show {
+  0% {
+    transform: translateX(100%);
+  }
+  15% {
+    transform: translateX(0);
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

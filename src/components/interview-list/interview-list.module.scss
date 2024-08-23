@@ -1,0 +1,118 @@
+.interview-list {
+  min-width: 70rem;
+  display: flex;
+  flex-flow: column-reverse nowrap;
+
+  position: relative;
+  border-radius: 8px;
+  background-color: $transparent;
+
+  overflow-x: auto;
+
+  &__header {
+    order: 999;
+    padding-bottom: 10px;
+
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    backdrop-filter: blur(5px);
+  }
+}
+
+.interview {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  gap: $normal-gap;
+
+  border-bottom: 5px solid $color-1000;
+
+  &:not(:first-child) {
+    padding: 20px 0;
+  }
+
+  &__item {
+    flex: 0 0 12.5%;
+    user-select: all;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__item-container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__name {
+    text-transform: capitalize;
+  }
+
+  &__link {
+    text-decoration: underline solid 2px;
+    &:hover {
+      color: $color-600;
+    }
+  }
+
+  &__svg-link {
+    user-select: none;
+    display: block;
+    height: 30px;
+    width: 30px;
+  }
+
+  &__delete {
+    path {
+      transition: stroke 0.3s ease-out;
+    }
+    &:hover path {
+      stroke: $error-color;
+    }
+  }
+
+  &__edit {
+    path {
+      transition: stroke 0.3s ease-out;
+    }
+    &:hover path {
+      stroke: $color-200;
+    }
+  }
+}
+
+.modal-delete {
+  color: $error-color;
+  border: 1px solid $error-color;
+
+  &:hover {
+    color: $error-color;
+    box-shadow: inset 0 -4px 1.5em $error-color;
+  }
+}
+
+.modal {
+  position: fixed;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $color-1000;
+}
+
+._offer {
+  color: $success-color;
+  @extend .text-20;
+}
+
+._fail {
+  color: $error-color;
+  @extend .text-20;
+}
+
+._process {
+  color: $gray;
+  @extend .text-20;
+}

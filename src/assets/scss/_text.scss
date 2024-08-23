@@ -1,0 +1,177 @@
+.text-16 {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 150%;
+}
+
+.text-18 {
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 156%;
+}
+
+.text-20 {
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 140%;
+}
+
+.text-24 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 133%;
+}
+
+.text-30 {
+  font-weight: 500;
+  font-size: 1.875rem;
+  line-height: 120%;
+}
+
+.text-36 {
+  font-weight: 500;
+  font-size: 2.25rem;
+  line-height: 111%;
+}
+
+.text-48 {
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 100%;
+}
+
+.text-60 {
+  font-weight: 500;
+  font-size: 3.75rem;
+  line-height: 100%;
+}
+
+.text-72 {
+  font-weight: 500;
+  font-size: 4.5rem;
+  line-height: 100%;
+}
+
+.text-96 {
+  font-weight: 500;
+  font-size: 6rem;
+  line-height: 100%;
+}
+
+.text-128 {
+  font-weight: 500;
+  font-size: 8rem;
+  line-height: 100%;
+}
+
+// semi-bold
+.text-16-sb {
+  @extend .text-16;
+  font-weight: 600;
+}
+
+.text-18-sb {
+  @extend .text-18;
+  font-weight: 600;
+}
+
+.text-20-sb {
+  @extend .text-20;
+  font-weight: 600;
+}
+
+.text-24-sb {
+  @extend .text-24;
+  font-weight: 600;
+}
+
+.text-30-sb {
+  @extend .text-30;
+  font-weight: 600;
+}
+
+.text-36-sb {
+  @extend .text-36;
+  font-weight: 600;
+}
+
+.text-48-sb {
+  @extend .text-48;
+  font-weight: 600;
+}
+
+.text-60-sb {
+  @extend .text-60;
+  font-weight: 600;
+}
+
+.text-72-sb {
+  @extend .text-72;
+  font-weight: 600;
+}
+
+.text-96-sb {
+  @extend .text-96;
+  font-weight: 600;
+}
+
+.text-128-sb {
+  @extend .text-128;
+  font-weight: 600;
+}
+
+// bold
+.text-16-b {
+  @extend .text-16;
+  font-weight: 700;
+}
+
+.text-18-b {
+  @extend .text-18;
+  font-weight: 700;
+}
+
+.text-20-b {
+  @extend .text-20;
+  font-weight: 700;
+}
+
+.text-24-b {
+  @extend .text-24;
+  font-weight: 700;
+}
+
+.text-30-b {
+  @extend .text-30;
+  font-weight: 700;
+}
+
+.text-36-b {
+  @extend .text-36;
+  font-weight: 700;
+}
+
+.text-48-b {
+  @extend .text-48;
+  font-weight: 700;
+}
+
+.text-60-b {
+  @extend .text-60;
+  font-weight: 700;
+}
+
+.text-72-b {
+  @extend .text-72;
+  font-weight: 700;
+}
+
+.text-96-b {
+  @extend .text-96;
+  font-weight: 700;
+}
+
+.text-128-b {
+  @extend .text-128;
+  font-weight: 700;
+}

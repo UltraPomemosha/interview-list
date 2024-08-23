@@ -1,0 +1,33 @@
+$p: '.u-radio';
+#{$p} {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: $normal-gap;
+
+  &__circle {
+    flex: 0 0 7px;
+    width: 7px;
+    height: 7px;
+
+    outline: 2px solid $color-500;
+    outline-offset: 3px;
+    border-radius: 50%;
+    background-color: transparent;
+  }
+
+  &__title {
+
+  }
+
+  &__input {
+    display: none;
+    &:checked + #{$p} {
+      color: $color-700;
+
+      #{$p}__circle {
+        background-color: $color-700;
+      }
+    }
+  }
+}

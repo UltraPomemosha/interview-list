@@ -1,0 +1,49 @@
+@import './global';
+* {
+  margin: 0;
+  margin-inline: 0;
+  margin-block: 0;
+  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
+  box-sizing: border-box !important;
+}
+
+a {
+  outline: none;
+  color: inherit;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+legend,
+fieldset {
+  outline: none;
+  border: none;
+}
+
+a, button, label {
+  all: unset;
+  cursor: pointer;
+}
+
+ul { 
+  list-style: none;
+}
+
+html, body {
+  height: 100%;
+  font-size: 16px;
+}
+
+#root {
+  min-height: 100%;
+}
