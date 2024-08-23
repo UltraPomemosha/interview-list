@@ -1,6 +1,7 @@
 # Interview List
 
 This project inspired on project by frontend-skills: https://interviewstest.netlify.app/
+It is my first React Project
 
 ## Installing
 
